@@ -122,8 +122,8 @@ while True:
                             server = smtplib.SMTP('smtp.gmail.com', 587)
                             server.ehlo()
                             server.starttls()
-                            server.login('rockstarktm7@gmail.com', 'password')
-                            server.sendmail('binapanta13@yahoo.com', to, content)
+                            server.login('x@x.com', 'password')
+                            server.sendmail('x@x.com', to, content)
                             server.close()
 
                         if __name__ == "__main__":
@@ -402,17 +402,13 @@ while True:
         elif cmp_.confidence<70:
             print("YOU ARE NOT AUTHORIZED!")
             speak("YOU ARE NOT AUTHORIZED")
-            res='Get outta here!','You cant fool me','You had a bad day intruder? Ill make it worse','You probably felt this strong urge to die!'
-            reply=(random.choices(res, k=1))
-            print(reply)
-            speak(reply)
             sys.exit()
 
     break
 if __name__ == '__main__':
 
-    api_key ='xQLsTmMyqp1L2MIt7M3l0h-cQiy0Dwhl' 
-    api_secret = 'TyBSGw8NBEP9Tbhv_JbQM18mIlorY6-D'
+    api_key = 0 #enter your key here
+    api_secret = 0#enter your secret here
 
     try:
         app_ = FacePP(api_key=api_key, api_secret=api_secret)
@@ -430,10 +426,8 @@ if __name__ == '__main__':
 
     except exceptions.BaseFacePPError as e:
         print('Error:', e)
-        res='Get outta here!','You cant fool me','You had a bad day intruder? Ill make it worse','You probably felt this strong urge to die!'
-        reply=(random.choices(res, k=1))
-        print(reply)
-        speak(reply)
+        print("YOU ARE NOT AUTHORIZED!!)
+        speak("YOU ARE NOT AUTHORIZED!!)
        
 
    
