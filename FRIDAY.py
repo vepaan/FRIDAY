@@ -66,7 +66,7 @@ while True:
         img_file2="C:/IMP/Music/test.jpg"
         cmp_ = app.compare.get(image_file1=img_file1,image_file2=img_file2)
         print('Matching percent', '=', cmp_.confidence)
-        if cmp_.confidence>70:
+        if cmp_.confidence>85:
             print("Retinal and biometrics scan accepted")
             speak('Retinal and Biometrics scan accepted')
             for passwordcount in range(1,4):
