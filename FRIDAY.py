@@ -221,7 +221,7 @@ while True:
                                     webbrowser.open("stackoverflow.com")
 
                                 elif 'weather' in query:
-                                    api_key = 'xQLsTmMyqp1L2MIt7M3l0h-cQiy0Dwhl'
+                                    api_key = 'your API key here'
                                     base_url = "http://api.openweathermap.org/data/2.5/weather?"
                                     city_name = 'Kathmandu'
                                     complete_url = base_url + "appid=" + api_key + "&q=" + city_name
